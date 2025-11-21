@@ -2,25 +2,70 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --color-main: #ff00ff;
+  --color-secondary: #ffff00;
+  --color-accent: #00ffff;
+  --shadow-hard: 4px 4px 0px 0px #000000;
+  --border-thick: 3px solid #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-main: var(--color-main);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  border: var(--border-thick);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Neo-Brutalist Utilities */
+.neo-box {
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  background-color: white;
+}
+
+.neo-button {
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  background-color: var(--color-main);
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.neo-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.neo-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.neo-input {
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 0.5rem;
+  width: 100%;
+  font-family: var(--font-mono);
+}
+
+.neo-input:focus {
+  outline: none;
+  background-color: var(--color-secondary);
 }
