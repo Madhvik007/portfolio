@@ -44,8 +44,10 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: Build with Next.js (static export)
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Build with Next.js
+        run: |
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+
 
       - name: Create .nojekyll file
         run: touch ./out/.nojekyll
@@ -53,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./.next/static/export
 
   deploy:
     environment:
