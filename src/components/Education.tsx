@@ -14,7 +14,7 @@ export default function Education() {
                         </div>
                         <p className="text-xl font-bold mb-2">Computer Engineering</p>
                         <p className="font-mono mb-1">Gujarat Technological University (GTU)</p>
-                        <p className="font-mono text-sm opacity-75">📍 Bhuj, Gujarat, India</p>
+                        <p className="font-mono text-sm opacity-75">📍India</p>
                     </div>
 
                     <div className="neo-box p-8 bg-white">

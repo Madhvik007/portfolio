@@ -10,6 +10,20 @@
   --border-thick: 3px solid #000000;
 }
 
+[data-theme="dark"] {
+  --background: #111111;
+  --foreground: #c8c8c8;
+  --color-main: #ff00ff;
+  --color-secondary: #ffff00;
+  --color-accent: #00ffff;
+  --shadow-hard: 4px 4px 0px 0px #000000;
+  --border-thick: 3px solid #787878;
+}
+
+[data-theme="dark"] .bg-white{
+  background-color: #111111;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

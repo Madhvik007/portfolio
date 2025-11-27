@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
+
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white border-b-[3px] border-black p-4">
+    <header className="sticky top-0 z-50 bg-[var(--background)] border-b-[3px] border-[var(--foreground)] p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-black uppercase tracking-tighter hover:text-[var(--color-main)] transition-colors">
           MY_PORTFOLIO
@@ -24,9 +28,12 @@ export default function Header() {
             CONTACT
           </Link>
         </nav>
-        <button className="neo-button md:hidden">
-          MENU
-        </button>
+        <div className="flex items-center gap-4">
+          <DarkModeToggle />
+          <button className="neo-button md:hidden">
+            MENU
+          </button>
+        </div>
       </div>
     </header>
   );

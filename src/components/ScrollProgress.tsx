@@ -1,4 +1,3 @@
-"use strict";
 "use client";
 import { useEffect, useState } from "react";
 
@@ -24,9 +23,9 @@ export default function ScrollProgress() {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 w-full h-2 z-50 bg-transparent pointer-events-none">
+        <div className="fixed top-0 left-0 w-full h-2 z-[60] bg-transparent pointer-events-none">
             <div
-                className="h-full bg-[var(--color-main)] transition-all duration-100 ease-out border-b-2 border-black"
+                className="h-full bg-[var(--color-secondary)] transition-all duration-100 ease-out border-b-2 border-black"
                 style={{ width: `${scrollProgress}%` }}
             />
         </div>
