@@ -29,6 +29,11 @@ body {
   margin: 0;
 }
 
+::selection {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
 /* Neo-Brutalist Utilities */
 .neo-box {
   border: var(--border-thick);
