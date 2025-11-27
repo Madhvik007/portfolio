@@ -1,32 +1,32 @@
 export default function Projects() {
     const projects = [
         {
-            title: "Project Alpha",
-            description: "A radical approach to e-commerce.",
-            tags: ["Next.js", "Stripe"],
+            title: "Assignment Tracker",
+            description: "Role-based assignment management system for students & teachers.",
+            tags: ["React", "Node.js", "MongoDB"],
             color: "bg-[var(--color-main)]"
         },
         {
-            title: "Neon Dash",
-            description: "Real-time analytics dashboard.",
-            tags: ["React", "D3.js"],
+            title: "Mini Study AI",
+            description: "Personal AI assistant for study guidance and habit tracking.",
+            tags: ["AI", "Productivity", "In Progress"],
             color: "bg-[var(--color-secondary)]"
         },
         {
-            title: "Brutal UI",
-            description: "Open source component library.",
-            tags: ["Tailwind", "NPM"],
+            title: "Hackathon Projects",
+            description: "Algorithm solvers and data science notebooks.",
+            tags: ["Python", "Pandas", "Algorithms"],
             color: "bg-[var(--color-accent)]"
         }
     ];
 
     return (
-        <section id="projects" className="p-8 border-b-[3px] border-black bg-white">
+        <section id="projects" className="scroll-mt-16 p-8 border-b-[3px] border-black bg-white">
             <div className="container mx-auto">
                 <h2 className="text-5xl font-black mb-12 uppercase text-center">Selected Works</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="neo-box p-0 flex flex-col h-full transition-transform hover:-translate-y-2">
+                        <div key={index} className="neo-box p-0 flex flex-col h-full bg-white transition-transform hover:-translate-y-2">
                             <div className={`h-48 ${project.color} border-b-[3px] border-black flex items-center justify-center`}>
                                 <span className="text-4xl font-black opacity-50">IMG</span>
                             </div>

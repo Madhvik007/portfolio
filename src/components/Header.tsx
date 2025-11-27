@@ -11,10 +11,16 @@ export default function Header() {
           <Link href="#about" className="hover:underline decoration-[3px] decoration-[var(--color-main)] underline-offset-4">
             ABOUT
           </Link>
-          <Link href="#projects" className="hover:underline decoration-[3px] decoration-[var(--color-secondary)] underline-offset-4">
+          <Link href="#education" className="hover:underline decoration-[3px] decoration-[var(--color-secondary)] underline-offset-4">
+            EDUCATION
+          </Link>
+          <Link href="#projects" className="hover:underline decoration-[3px] decoration-[var(--color-accent)] underline-offset-4">
             PROJECTS
           </Link>
-          <Link href="#contact" className="hover:underline decoration-[3px] decoration-[var(--color-accent)] underline-offset-4">
+          <Link href="#experience" className="hover:underline decoration-[3px] decoration-[var(--color-main)] underline-offset-4">
+            EXPERIENCE
+          </Link>
+          <Link href="#contact" className="hover:underline decoration-[3px] decoration-[var(--color-secondary)] underline-offset-4">
             CONTACT
           </Link>
         </nav>
