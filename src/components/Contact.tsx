@@ -17,7 +17,7 @@ export default function Contact() {
                         </div>
                         <div className="space-y-2">
                             <label className="font-bold uppercase block">Message</label>
-                            <textarea className="neo-input h-32 resize-none" placeholder="TELL ME ABOUT YOUR PROJECT"></textarea>
+                            <textarea className="neo-input h-32 resize-none" placeholder="JUST SAY HI"></textarea>
                         </div>
                         <button type="button" className="neo-button w-full text-xl py-4 bg-black text-white hover:bg-gray-800">
                             SEND MESSAGE

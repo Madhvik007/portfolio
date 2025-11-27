@@ -29,10 +29,16 @@ body {
   margin: 0;
 }
 
-::selection {
+body::selection {
   background-color: var(--foreground);
   color: var(--background);
 }
+
+.bg-black::selection {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
 
 /* Neo-Brutalist Utilities */
 .neo-box {
@@ -72,4 +78,26 @@ body {
 .neo-input:focus {
   outline: none;
   background-color: var(--color-secondary);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.hover-glitch:hover {
+  animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
 }

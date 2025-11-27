@@ -12,10 +12,10 @@ export default function Home() {
     <main className="min-h-screen bg-[var(--background)]">
       <Header />
       <Hero />
-      <About />
-      <Education />
       <Projects />
+      <About />
       <Experience />
+      <Education />
       <Contact />
       <Footer />
     </main>
