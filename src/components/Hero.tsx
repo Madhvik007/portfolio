@@ -11,7 +11,7 @@ export default function Hero() {
                 <a href="#projects" className="neo-button text-xl px-8 py-4 bg-[var(--color-main)]">
                     VIEW WORK
                 </a>
-                <a href="#contact" className="neo-button text-xl px-8 py-4 bg-white hover:bg-gray-100">
+                <a href="#contact" className="neo-button text-xl px-8 py-4 hover:bg-gray-100">
                     CONTACT ME
                 </a>
             </div>

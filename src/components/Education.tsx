@@ -5,7 +5,7 @@ export default function Education() {
                 <h2 className="text-4xl font-black mb-12 uppercase text-center">Education</h2>
 
                 <div className="max-w-4xl mx-auto">
-                    <div className="neo-box p-8 bg-[var(--color-secondary)] mb-8">
+                    <div className="neo-box p-8 bg-[var(--color-secondary)] mb-8 yellow">
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                             <h3 className="text-2xl font-black uppercase">Bachelor of Engineering (B.E.)</h3>
                             <span className="font-mono font-bold bg-white px-3 py-1 border-2 border-black mt-2 md:mt-0">

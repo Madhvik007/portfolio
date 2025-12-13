@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <section id="contact" className="scroll-mt-16 p-8 bg-[var(--color-main)] border-b-[3px] border-black">
+        <section id="contact" className="scroll-mt-16 p-8 border-b-[3px] border-black">
             <div className="container mx-auto max-w-4xl">
                 <div className="neo-box p-8 md:p-12 bg-white">
                     <h2 className="text-5xl font-black mb-8 uppercase text-center">Let's Talk</h2>

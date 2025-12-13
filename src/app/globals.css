@@ -22,7 +22,14 @@
 
 [data-theme="dark"] .bg-white{
   background-color: #111111;
+  color: var(--foreground);
 }
+
+[data-theme="dark"] .border-black{
+  border-color: var(--foreground);
+}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -114,4 +121,12 @@ body::selection {
 
 .hover-glitch:hover {
   animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.yellow{
+  color: black;
+}
+
+.back-to-top{
+  color: black;
 }

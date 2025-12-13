@@ -35,7 +35,7 @@ export default function Projects() {
                                 <p className="font-mono mb-6 flex-grow">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tags.map(tag => (
-                                        <span key={tag} className="text-xs font-bold border border-black px-2 py-1 bg-gray-100">
+                                        <span key={tag} className="text-xs font-bold border border-black px-2 py-1 bg-gray-100 yellow">
                                             {tag}
                                         </span>
                                     ))}

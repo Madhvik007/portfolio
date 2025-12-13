@@ -6,9 +6,8 @@ export default function Footer() {
                     © {new Date().getFullYear()} MADHVIK. ALL RIGHTS RESERVED.
                 </p>
                 <div className="flex justify-center gap-6 font-bold">
-                    <a href="#" className="hover:text-[var(--color-main)]">TWITTER</a>
-                    <a href="#" className="hover:text-[var(--color-secondary)]">GITHUB</a>
-                    <a href="#" className="hover:text-[var(--color-accent)]">LINKEDIN</a>
+                    <a href="https://github.com/Madhvik007" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-secondary)]">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/madhvikkathiria/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-accent)]">LINKEDIN</a>
                 </div>
             </div>
         </footer>

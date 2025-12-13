@@ -26,7 +26,7 @@ export default function About() {
     ];
 
     return (
-        <section id="about" className="scroll-mt-16 p-8 border-b-[3px] border-black bg-[var(--color-accent)]">
+        <section id="about" className="scroll-mt-16 p-8 border-b-[3px] border-black">
             <div className="container mx-auto grid md:grid-cols-2 gap-8">
                 <div className="neo-box p-8 bg-white">
                     <h2 className="text-4xl font-black mb-6 uppercase">About Me</h2>
