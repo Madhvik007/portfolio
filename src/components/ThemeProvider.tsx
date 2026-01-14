@@ -15,7 +15,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('light');
     const [mounted, setMounted] = useState(false);
 
-    // Load theme from localStorage on mount
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme') as Theme | null;
         if (savedTheme) {
@@ -25,7 +24,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         setMounted(true);
     }, []);
 
-    // Save theme to localStorage and update DOM when it changes
     useEffect(() => {
         if (mounted) {
             localStorage.setItem('theme', theme);
